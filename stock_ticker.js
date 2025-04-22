@@ -7,7 +7,9 @@ var connStr = "mongodb+srv://austinchang:cs20password@cluster0.es2brva.mongodb.n
 var port = process.env.PORT || 3000;
 http.createServer(function (req, res) {   
     res.writeHead(200, {'Content-Type': 'text/html'});
-    var urlObj = url.parse(req.url, true);
+    res.write ("Success!  This app is deployed online");
+    res.end();
+    /*var urlObj = url.parse(req.url, true);
     var path = urlObj.pathname;
     if (path == "/" || path == "/home") {
         //display individual file pages in a multi-page app
@@ -30,9 +32,10 @@ http.createServer(function (req, res) {
     else {
         res.write ("Unknown page request");
         res.end();      
-    }
+    }*/
 }).listen(port);
 
+/*
 client = new MongoClient(connStr);
 async function display(input, choice) {
     try {
@@ -58,4 +61,4 @@ async function display(input, choice) {
     finally {
         client.close();
     }
-}
+}*/
