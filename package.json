@@ -4,16 +4,19 @@
   "description": "Shows info for companies",
   "main": "stock_ticker.js",
   "scripts": {
-  "start": "node stock_ticker.js"
-},
+    "start": "node stock_ticker.js"
+  },
   "repository": {
-  "type": "git",
-  "url": ""
-},
+    "type": "git",
+    "url": ""
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
-  "url": ""
-},
-  "homepage": ""
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "mongodb": "^6.16.0"
+  }
 }
