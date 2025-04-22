@@ -10,6 +10,7 @@ http.createServer(function (req, res) {
     var urlObj = url.parse(req.url, true);
     var path = urlObj.pathname;
     res.write("HI");
+    res.end();
     /*if (path == "/" || path == "/home") {
         //display individual file pages in a multi-page app
         file = 'form.html';
