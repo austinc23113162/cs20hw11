@@ -1,8 +1,8 @@
 var http = require('http');
 var fs = require("fs");
 var url = require('url');
-var MongoClient = require("mongodb").MongoClient;
-var connStr = "mongodb+srv://austinchang:cs20password@cluster0.es2brva.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+//var MongoClient = require("mongodb").MongoClient;
+//var connStr = "mongodb+srv://austinchang:cs20password@cluster0.es2brva.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 var port = process.env.PORT || 3000;
 http.createServer(function (req, res) {   
